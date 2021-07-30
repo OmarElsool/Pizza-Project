@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(243, 243, 243) ;
+    font-family: 'Playfair Display', serif;
+}
+li{
+    list-style: none;
+}
+nav div.container{
+    display: flex;
+    background-color: #fff;
+    justify-content: space-around;
+}
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+a.head{
+    display: flex;
+    color:rgb(224, 202, 186);
+    font-size: 45px;
+    justify-content: center;
+    align-self: center;
+    padding: 0px 35px;
+}
+.container ul li{
+    margin: 10px;
+    cursor: pointer;
+}
+.btn{
+    display: flex;
+    background-color: rgb(224, 202, 186);
+    font-size: 33px;
+    border: none;
+    text-align: center;
+    white-space: nowrap;
+    padding: 10px 45px;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    max-width: fit-content;
+}
+.container-box{
+    text-align: center;
+}
+div h1.title{
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+    font-size: 40px;
+    margin: 10px;
+    color: rgb(196, 195, 194);
+}
+.containerAdd{
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    padding: 30px;
+}
+form .input-box{
+    margin: 30px 0;
+    border-bottom: 2px solid rgb(224, 202, 186) ;
+}
+form input{
+    border: none;
+    width: 100%;
+    height: auto;
+    outline: none;
+    padding: 0px 10px;
+    font-size: 15px;
+    min-height: 50px;
+}
+form .valid{
+    color:red;
+    opacity:.8;
+    font-size:14px;
+}
+form input::placeholder{
+    color: #e0caba;
+    opacity: 50%;
+}
+.button input[type=submit]{
+    background-color:#e0caba;
+    color:white;
+    max-width: 150px;
+    font-size: 25px;
+    cursor: pointer;
+}
+form label{
+    display: flex;
+    text-align: left;
+    padding: 0px 7px;
+}
+form div.button{
+    margin: 10px;
+    border-radius: 8px;
+}
+footer.container{
+    display: flex;
+    background-color: rgb(243, 243, 243);
+    justify-content: center;
+}
+footer.container div{
+    font-size: 30px;
+    margin: 30px;
+}
+.center{
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.wrap-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 450px;
+}
+div.card-container{
+    background-color: #ffffff;
+    text-align: center;
+    margin: 16px;
+    padding: 16px;
+}
+.card-body{
+    font-size: 2.1vw;
+    padding: 16px;
+    display:flex;
+    justify-content:center;
+}
+.Pizza-img img{
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.Info{
+    display: flex;
+    border-top: 2px solid #e0caba;
+    padding-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+.More-info{
+    color: #e0caba;
+    font-size: 2vw;
+    margin: 20px;
+    padding: 5px;
+}
+.con-MoreInfo{
+    display: flex;
+    justify-content: center;
+    background-color: #f3f3f3;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    min-height: 550px;
+}
+.con-MoreInfo h2{
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+}
+.con-MoreInfo h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    a.head{
+    display: flex;
+    color:rgb(224, 202, 186);
+    font-size: 25px;
+    justify-content: center;
+    align-self: center;
+    padding: 0px 35px;
+    }
+    .btn{
+        display: flex;
+        background-color: rgb(224, 202, 186);
+        font-size: 2.8vw;
+        border: none;
+        text-align: center;
+        padding: 6px 30px;
+        align-items: center;
+        align-self: center;
+        border-radius: 8px;
+        min-height: 30px;
+    }
+    div h1.title {
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 25px;
+    margin: 10px;
+    color: rgb(196, 195, 194);
+    }
+    form label {
+    font-size: 14px;
+    }
+    .button input[type=submit] {
+        background-color: #e0caba;
+        color: white;
+        max-width: 150px;
+        font-size: 15px;
+    }
+    .Pizza-img img{
+        width: 100px;
+        height: 100px;
+    }
+    footer.container div {
+        font-size: 15px;
+        margin: 10px;
+    }
+    form div.button{
+        margin: 0;
+    }
+}
